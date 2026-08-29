@@ -1,5 +1,5 @@
 ## Task 1: The Vague Prompt (Copy & Paste)
-"help me debug"
+"Help me debug this API endpoint. It keeps returning a 500 internal server error."
 
 ---
 
