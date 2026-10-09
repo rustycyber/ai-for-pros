@@ -13,7 +13,7 @@ from typing import Any
 
 from tools import TOOLS
 
-MODEL = os.environ.get("OPENROUTER_MODEL", "deepseek/deepseek-v3")
+MODEL = os.environ.get("OPENROUTER_MODEL", "deepseek/deepseek-chat")
 
 
 def openrouter_tool_schemas() -> list[dict[str, Any]]:

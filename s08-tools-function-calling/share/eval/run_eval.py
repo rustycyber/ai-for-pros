@@ -7,10 +7,17 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import os
 import sys
 from pathlib import Path
 
+# Add share to path for agents and eval modules
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+# Add starter or solution path for tools (respect PYTHONPATH if set)
+_root = Path(__file__).resolve().parent.parent.parent
+if "PYTHONPATH" not in os.environ:
+    sys.path.insert(0, str(_root / "solution"))
 
 from agents import run_openrouter as run
 from eval.dataset import DATASET
