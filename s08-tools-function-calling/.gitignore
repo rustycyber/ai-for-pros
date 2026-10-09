@@ -27,7 +27,6 @@ htmlcov/
 *.swo
 
 # Environment
-.env
 .env.local
 
 # OS
