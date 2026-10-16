@@ -1,0 +1,8 @@
+{
+  "model": "claude-3-5-sonnet-20241022",
+  "commands_dir": ".claude/commands",
+  "agent_definitions_dir": "agents",
+  "skills_dir": "skills",
+  "handoff_tracking": true,
+  "context_preservation": true
+}

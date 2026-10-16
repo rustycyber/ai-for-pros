@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "request": "Research Python benefits and write a summary",
+    "expected_intent": {
+      "needs_research": true,
+      "needs_writing": true,
+      "format": "summary"
+    },
+    "expected_output_type": "object",
+    "expected_keys": ["title", "content", "word_count", "citations"]
+  },
+  {
+    "id": 2,
+    "request": "Research FastAPI features",
+    "expected_intent": {
+      "needs_research": true,
+      "needs_writing": false
+    },
+    "expected_output_type": "object",
+    "expected_keys": ["topic", "findings", "sources", "confidence"]
+  },
+  {
+    "id": 3,
+    "request": "Find information about Docker and create a blog post",
+    "expected_intent": {
+      "needs_research": true,
+      "needs_writing": true,
+      "format": "blog"
+    },
+    "expected_output_type": "object",
+    "expected_keys": ["title", "content", "word_count", "citations"]
+  },
+  {
+    "id": 4,
+    "request": "Write an article about microservices",
+    "expected_intent": {
+      "needs_research": false,
+      "needs_writing": true,
+      "format": "article"
+    },
+    "expected_output_type": "object",
+    "expected_keys": ["title", "content", "word_count", "citations"]
+  },
+  {
+    "id": 5,
+    "request": "Look up Kubernetes best practices and write a summary",
+    "expected_intent": {
+      "needs_research": true,
+      "needs_writing": true,
+      "format": "summary"
+    },
+    "expected_output_type": "object",
+    "expected_keys": ["title", "content", "word_count", "citations"]
+  }
+]
